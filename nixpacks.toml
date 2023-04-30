@@ -3,7 +3,7 @@ aptPkgs = ['...', 'python2', 'g++', 'sqlite3']
 
 [phases.build]
 builder = 'NIXPACKS'
-buildCommand = 'npm run before-build'
+buildCommand = 'npm run setup'
 
 [phases.deploy]
 startCommand = 'npm run start'
