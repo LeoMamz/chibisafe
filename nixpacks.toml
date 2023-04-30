@@ -1,7 +1,7 @@
-[setup]
+[phases.setup]
 aptPkgs = ['...', 'python']
 
-[install]
+[phases.install]
 cmd = "npm run i"
 
 [build]
