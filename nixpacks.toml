@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ['...', 'python2']
+aptPkgs = ['...', 'python3']
 
 [phases.build]
 builder = "NIXPACKS"
