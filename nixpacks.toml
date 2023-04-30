@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ['...', 'python2', 'g++']
+aptPkgs = ['...', 'python2', 'g++', 'sqlite3']
 
 [phases.build]
 builder = 'NIXPACKS'
