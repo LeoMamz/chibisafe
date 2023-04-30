@@ -56,25 +56,25 @@ async function start() {
 		}
 	];
 
-	const response = await qoa.prompt(wizard);
-	let envfile = '';
+// 	const response = await qoa.prompt(wizard);
+// 	let envfile = '';
 
-	const defaultSettings = {
-		DOMAIN: response.DOMAIN,
-		SERVER_PORT: response.SERVER_PORT || 5000,
-		DB_CLIENT: response.DB_CLIENT,
-		DB_HOST: response.DB_HOST || null,
-		DB_USER: response.DB_USER || null,
-		DB_PASSWORD: response.DB_PASSWORD || null,
-		DB_DATABASE: response.DB_DATABASE || null
-	};
+// 	const defaultSettings = {
+// 		DOMAIN: response.DOMAIN,
+// 		SERVER_PORT: response.SERVER_PORT || 5000,
+// 		DB_CLIENT: response.DB_CLIENT,
+// 		DB_HOST: response.DB_HOST || null,
+// 		DB_USER: response.DB_USER || null,
+// 		DB_PASSWORD: response.DB_PASSWORD || null,
+// 		DB_DATABASE: response.DB_DATABASE || null
+// 	};
 
-	const keys = Object.keys(defaultSettings);
+// 	const keys = Object.keys(defaultSettings);
 
-	for (const item of keys) {
-		envfile += `${item}=${defaultSettings[item]}\n`;
-	}
-	jetpack.write('.env', envfile);
+// 	for (const item of keys) {
+// 		envfile += `${item}=${defaultSettings[item]}\n`;
+// 	}
+// 	jetpack.write('.env', envfile);
 	jetpack.dir('database');
 
 	console.log();
